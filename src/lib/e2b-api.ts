@@ -28,6 +28,7 @@ export async function createTemplate(apiKey: string): Promise<CreateTemplateResp
       "X-API-Key": apiKey,
     },
     body: JSON.stringify({
+      name: `sandbox-template-${Date.now()}`,
       cpuCount: 8,
       memoryMB: 8192,
     }),
