@@ -55,7 +55,7 @@ export async function startBuild(
         "Content-Type": "application/json",
         "X-API-Key": apiKey,
       },
-      body: JSON.stringify({}),
+      body: JSON.stringify({ fromTemplate: "base" }),
     }
   );
 
